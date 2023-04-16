@@ -1,0 +1,28 @@
+{
+	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+	"editor.formatOnSave": false,
+	"editor.formatOnPaste": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"workbench.colorCustomizations": {
+		"titleBar.activeForeground": "#fff",
+		"titleBar.inactiveForeground": "#ffffffaa",
+		"titleBar.activeBackground": "#FF6633",
+		"titleBar.inactiveBackground": "#d15329"
+	},
+	"path-intellisense.mappings": {
+		"@upera": "${workspaceRoot}/src"
+	},
+	"cSpell.words": [
+		"clsx",
+		"commitlint",
+		"tailwindcss",
+		"todos",
+		"upera",
+		"vazirmatn"
+	]
+}

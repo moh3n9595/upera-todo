@@ -1,3 +1,35 @@
 {
-  "extends": "next/core-web-vitals"
+	"env": {
+		"browser": true,
+		"es6": true,
+		"cypress/globals": true
+	},
+	"extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended", "plugin:cypress/recommended", "prettier"],
+	"plugins": ["@typescript-eslint", "cypress", "prettier"],
+	"rules": {
+		"no-undef": "error",
+		"no-unused-vars": "off",
+		"@typescript-eslint/no-unused-vars": "error",
+		"prettier/prettier": ["error"],
+		"import/order": [
+			"error",
+			{
+				"groups": ["builtin", "external", "internal", ["parent", "sibling"]],
+				"pathGroups": [
+					{
+						"pattern": "react",
+						"group": "external",
+						"position": "before"
+					}
+				],
+				"pathGroupsExcludedImportTypes": ["builtin"],
+				"newlines-between": "always",
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				}
+			}
+		],
+		"@typescript-eslint/no-var-requires": "off"
+	}
 }
